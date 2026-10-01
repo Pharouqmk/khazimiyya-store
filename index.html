@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khazimiyya Herbal Medicine</title>
+<meta name="description" content="Traditional herbal products from Khazimiyya Herbal Medicine. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+ <a class="brand" href="#top">Khazimiyya Herbal</a>
+ <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+ <button class="cartbtn" id="open" type="button">Cart (<span id="count">0</span>)</button>
+</div></header>
+
+<main class="wrap" id="top">
+ <div class="hero" aria-roledescription="carousel" aria-label="Highlights">
+  <div class="slide s1 on"><h1>Natural herbal products, ordered from home</h1><p>Magani daga Khazimiyya: dr&ograve;&rsquo;yin gargajiya na halitta, delivered to you.</p><a class="cta" href="#all">Shop now</a></div>
+  <div class="slide s2"><h1>Limited-time offers</h1><p>Save on selected products while stock lasts.</p><a class="cta" href="#offers">See offers</a></div>
+  <div class="slide s3"><h1>Sell with us</h1><p>Make or supply herbal products? Ask about listing them here.</p><a class="cta" id="sellink" href="#">Message us</a></div>
+  <div class="dots" id="dots"></div>
+ </div>
+ <div class="trust">
+  <div><b>Order on WhatsApp</b>Send your cart straight to us.</div>
+  <div><b>Delivery</b>Confirm your delivery details with us.</div>
+  <div><b>Ask first</b>Message us with any questions about a product.</div>
+ </div>
+ <div class="cats" id="cats" role="group" aria-label="Categories"></div>
+
+ <section id="offers" hidden><div class="sh"><h2>Limited-time offers</h2></div><div class="row" id="offrow"></div></section>
+ <section id="all"><div class="sh"><h2>All products</h2></div><div class="grid" id="grid"></div></section>
+
+ <section><h2>Questions</h2>
+  <details><summary>How do I order?</summary><p>Add products to your cart, enter your name, phone and address, then tap Order on WhatsApp. We reply to confirm price, payment and delivery.</p></details>
+  <details><summary>How do I pay?</summary><p>Payment is agreed with us on WhatsApp after you send your order.</p></details>
+  <details><summary>Can I ask about ingredients?</summary><p>Yes. Message us on WhatsApp before ordering and we will answer your questions.</p></details>
+ </section>
+ <p class="note">These are traditional herbal products and are not a substitute for professional medical advice. If you are pregnant, nursing, on medication, or have a health condition, talk to a doctor before use.</p>
+</main>
+
+<footer><div class="wrap">
+ <div><h3>Khazimiyya Herbal Medicine</h3>Facebook: Magani Daga Khazimiyya</div>
+ <div><h3>Contact</h3>Phone and WhatsApp: <a href="tel:08146258930">0814 625 8930</a></div>
+ <div><h3>Newsletter</h3>Follow our Facebook page for new products and offers.</div>
+</div></footer>
+
+<nav class="nav" aria-label="Quick links"><a href="#top">Home</a><a href="#all">Shop</a><button id="open2" type="button">Cart</button><a id="wa2" href="#">Contact</a></nav>
+
+<dialog id="qvd"><h3 id="qn" style="margin:0 0 .3rem"></h3><div class="cat" id="qc"></div><p id="qd"></p><div class="price" id="qp"></div><div class="acts" style="margin-top:1rem"><button class="add" id="qa" type="button">Add to cart</button><button class="qv" id="qx" type="button">Close</button></div></dialog>
+
+<aside id="drawer" aria-label="Your cart" aria-hidden="true">
+ <button class="close" id="close" type="button">Close</button>
+ <h2 style="margin:0">Your cart</h2>
+ <div id="items"></div>
+ <div class="line"><b>Total</b><b id="total">&#8358;0</b></div>
+ <label>Your name<input id="nm" autocomplete="name"></label>
+ <label>Your phone number<input id="ph" type="tel" autocomplete="tel"></label>
+ <label>Delivery address<textarea id="ad" rows="2" autocomplete="street-address"></textarea></label>
+ <button class="go" id="order" type="button">Order on WhatsApp</button>
+ <p id="msg" style="margin:0;color:var(--mut)" aria-live="polite"></p>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

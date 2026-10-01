@@ -1,0 +1,26 @@
+{
+  "wa": "2348146258930",
+  "products": [
+    {
+      "name": "Ni'ima Formula",
+      "cat": "Women's wellness",
+      "desc": "Herbal formula from Khazimiyya. Ask us for full ingredients and directions.",
+      "price": 5000,
+      "old": 0
+    },
+    {
+      "name": "Sample product 2",
+      "cat": "General wellness",
+      "desc": "Replace with your own product name and description.",
+      "price": 3500,
+      "old": 4500
+    },
+    {
+      "name": "Sample product 3",
+      "cat": "Men's wellness",
+      "desc": "Replace with your own product name and description.",
+      "price": 4000,
+      "old": 0
+    }
+  ]
+}

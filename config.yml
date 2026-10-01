@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: Pharouqmk/khazimiyya-store   # change to your-username/your-repo-name
+  branch: main
+
+media_folder: images
+public_folder: images
+
+collections:
+  - name: store
+    label: Store
+    files:
+      - name: products
+        label: Products and settings
+        file: products.json
+        format: json
+        fields:
+          - label: WhatsApp number for orders (country code, no +)
+            name: wa
+            widget: string
+          - label: Products
+            name: products
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Category, name: cat, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Price (naira), name: price, widget: number, value_type: int, min: 0 }
+              - { label: Old price (0 for no discount), name: old, widget: number, value_type: int, min: 0, default: 0 }
+              - { label: Photo, name: image, widget: image, required: false }
